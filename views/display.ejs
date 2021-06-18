@@ -1,0 +1,19 @@
+<head>
+    <link rel = "stylesheet" href = "../public/recipe_style.css">
+</head>
+
+<body>
+    <div id = "innerBody">
+<h1><a href = "<%=recipe.link%>" target = "_blank"><%=recipe.name%></a> </h1>
+<img src = <%= recipe.picLink%>
+<br><br>
+
+<br>
+<% if(recipe.name !== "Need More Recipes!"){ %>
+<form method = "POST", action = "/recipes">
+    <input type = "hidden" name = "id" value = <%=recipe.id%>>
+<input id = "submit" type = "submit" value = "Next Recipe!">
+</form>
+<%}%>
+</div>
+</body>

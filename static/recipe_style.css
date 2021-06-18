@@ -1,0 +1,19 @@
+body{
+    background-color: white;
+}
+#innerBody{
+margin:auto;
+width:50%;
+text-align:center;
+background-color: grey;
+border: 3px solid green;
+}
+
+#submit{
+    color:green;
+    font-size:30pt;
+}
+
+a:hover{
+    background-color: yellow;
+}
