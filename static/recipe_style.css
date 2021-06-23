@@ -1,19 +1,48 @@
 body{
     background-color: white;
 }
+
 #innerBody{
 margin:auto;
 width:50%;
 text-align:center;
 background-color: grey;
-border: 3px solid green;
+border: 3px solid black;
+
 }
 
 #submit{
-    color:green;
-    font-size:30pt;
+    font: 400 30px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: inherit;
+    border: none;
+    cursor:pointer;
+}
+
+#submit:hover{
+    text-shadow: 2px 2px black;
+}
+
+#name{
+    font: 400 58px 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+a{
+    color:black;
+    text-decoration: none;
 }
 
 a:hover{
-    background-color: yellow;
+    text-shadow: 2px 2px black;
+}
+
+img {
+    margin:auto;
+    width:50%;
+    transition: opacity 1.5s;
+    cursor:pointer;
+
+}
+img:hover{
+    opacity:0.2;
+
 }

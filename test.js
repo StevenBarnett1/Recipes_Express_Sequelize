@@ -1,5 +1,10 @@
-let count = 25
+let placeOrder = (toppings,callback) => {
 
-for(let i =0;i<100;i++){
-    console.log(Math.round(Math.random()*(2-1)+1))
 }
+
+let chooseToppings = (callback) => {
+    callback("tomatoes","onions")//return value of this is placeOrder
+}
+
+
+chooseToppings(toppings => placeOrder(toppings, order=>collectOrder(order)))
